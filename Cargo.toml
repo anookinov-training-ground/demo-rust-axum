@@ -1,0 +1,40 @@
+[package]
+name = "demo-rust-axum"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+# Web framework that focuses on ergonomics and modularity.
+axum = "0.6.1"
+
+# Modular reusable components for building robust clients and servers.
+tower = "0.4.13"
+
+# A fast and correct HTTP library.
+hyper = { version = "0.14.23", features = ["full"] }
+
+# Event-driven, non-blocking I/O platform.
+tokio = { version = "1.23.0", features = ["full"] }
+
+# A serialization/deserialization framework.
+serde = { version = "1.0.151", features = ["derive"] }
+
+# Serde serialization/deserialization of JSON data.
+serde_json = "1.0.91"
+
+# Encode and decode base64 as bytes or utf8.
+base64 = "0.20.0"
+
+# Types for HTTP requests and responses.
+http = "0.2.8"
+
+# Single assignment cells and lazy values
+once_cell = "1.16.0"
+
+# Application-level tracing for Rust.
+tracing = "0.1.37"
+
+# Utilities for implementing and composing `tracing` subscribers.
+tracing-subscriber = { version = "0.3.16", features = ["env-filter"] }
